@@ -1,0 +1,778 @@
+/* 
+Lizar Business HTML Template 
+
+*/
+/************ TABLE OF CONTENTS ***************
+
+1. Fonts
+2. Reset
+3. Global
+4. Main Header / Two / Three
+5. Main Slider / Two / Three
+6. About One
+7. Services One / Two / Three / Four
+8. Project One / Two / Three
+9. Testimonial One / Two / Three
+10. Partners One
+11. News One / Two
+12. CTA One
+13. Main Footer
+14. Clients One / Two / Three
+15. Counter One
+16. News Three
+17. InTouch One
+18. Page Title
+19. Banner One
+20. Work One
+21. Pricing One
+22. Team One
+23. Services Widgets
+24. Services Detail
+25. Our Projects
+26. Projects Detail
+27. Projects Widgets
+28. Our Blog
+29. Blog Widgets
+30. Comment Form
+31. Comment Box
+32. Contact Info
+33. Contact Form
+34. Map
+
+**********************************************/
+
+
+
+/*** 
+====================================================================
+	Css Files
+====================================================================
+***/
+@import url('01-global.css');
+@import url('module-css/header.css');
+@import url('module-css/footer.css');
+@import url('module-css/feature.css');
+@import url('module-css/solutions.css');
+@import url('module-css/pricing.css');
+@import url('module-css/brand.css');
+@import url('module-css/collaboration.css');
+@import url('module-css/testimonial.css');
+@import url('module-css/faq.css');
+@import url('module-css/free-trail.css');
+@import url('module-css/copywriting-tool.css');
+@import url('module-css/how-tool-work.css');
+@import url('module-css/counter.css');
+@import url('module-css/case.css');
+@import url('module-css/banner.css');
+@import url('module-css/gallery.css');
+@import url('module-css/image-generator-tools.css');
+@import url('module-css/art-and-image-tool.css');
+@import url('module-css/amazing-art-tool.css');
+@import url('module-css/create-something.css');
+@import url('module-css/page-title.css');
+@import url('module-css/about.css');
+@import url('module-css/video.css');
+@import url('module-css/team.css');
+@import url('module-css/ai-product.css');
+@import url('module-css/login.css');
+@import url('module-css/reset-password.css');
+@import url('module-css/contact.css');
+@import url('module-css/blog.css');
+@import url('module-css/career.css');
+@import url('module-css/404.css');
+
+
+
+
+@import url('02-bootstrap-select.min.css');
+@import url('03-owl.css');
+@import url('04-animate.css');
+@import url('05-rtl.css');
+@import url('06-custom-animate.css');
+@import url('07-dark-body.css');
+@import url('08-font-awesome.css');
+@import url('09-icomoon.css');
+@import url('10-jarallax.css');
+@import url('11-preloader.css');
+@import url('12-swiper.min.css');
+@import url('13-odometer-theme-default.css');
+@import url('14-jquery-ui.css');
+@import url('15-magnific-popup.css');
+@import url('../fonts/reey-font/stylesheet.css');
+
+
+
+/*** 
+====================================================================
+	
+====================================================================
+***/
+
+
+/* Sticy Header */
+.want-sticky-header .main-header.fixed-header {
+	position: relative !important;
+	display: none;
+}
+
+
+/* Box Layout */
+.box-layout .page-wrapper {
+	max-width: 1390px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 15px;
+	overflow: hidden;
+	background-color: var(--thm-body-bg);
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
+}
+
+.box-layout:before {
+	position: fixed;
+	content: '';
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: url(../images/partners/thm-pattern-2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.box-layout .slider-one_social-icons {
+	display: none;
+}
+
+.box-layout .main-header-two__inner {
+	margin: 0 0px;
+}
+/* ======================
+   UI/UX UPGRADE — Service Page Premium
+   Append to css/style.css (bottom)
+   ====================== */
+
+/* --- Hero / breadcrumb / particles --- */
+.da-hero-crumb {
+  position: relative;
+  padding: 90px 0 70px;
+  overflow: hidden;
+  background: linear-gradient(135deg,#0b0b10 0%,#111216 60%);
+  color: #fff;
+}
+.hero-particles {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.32;
+  mix-blend-mode: screen;
+}
+.da-hero-inner {
+  position: relative;
+  z-index: 2;
+  transform-origin: center;
+  transition: transform .18s ease;
+  text-align: center;
+}
+.da-hero-cta {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+.da-hero-title {
+  font-family: 'Sora', sans-serif;
+  font-size: 44px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  letter-spacing: -0.6px;
+}
+.da-hero-sub {
+  color: #bfc6ff;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.da-cta-btn, .da-ghost-btn { text-decoration:none; }
+
+/* CTA buttons in hero */
+.da-cta-btn {
+  display: inline-block;
+  background: linear-gradient(90deg,#6366f1 0%, #4f46e5 100%);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  box-shadow: 0 8px 30px rgba(79,70,229,0.18);
+  transition: transform .18s ease, box-shadow .18s ease;
+  margin-right: 10px;
+}
+.da-cta-btn span { transition: transform .22s ease; }
+.da-cta-btn:hover { transform: translateY(-4px); box-shadow: 0 18px 50px rgba(79,70,229,0.22); }
+.da-ghost-btn {
+  display:inline-block;
+  background:transparent;
+  color:#dfe6ff;
+  border:1px solid rgba(255,255,255,0.06);
+  padding:10px 18px;
+  border-radius:10px;
+  transition: background .18s ease;
+}
+.da-ghost-btn:hover{ background:rgba(255,255,255,0.03) }
+
+/* --- Section header --- */
+.section-head .tagline { color:#9aa0ff; font-weight:600; margin-bottom:8px; }
+.section-title { color:#fff; font-size:32px; margin-bottom:6px; }
+
+/* --- Service grid --- */
+.da-service-grid {
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 36px;
+}
+
+/* card base */
+.da-service-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform .35s cubic-bezier(.2,.9,.2,1), box-shadow .35s;
+  transform-style: preserve-3d;
+  will-change: transform;
+  border: 1px solid rgba(255,255,255,0.03);
+  display:flex;
+  flex-direction:column;
+}
+.da-service-card:focus { outline: 2px solid rgba(99,102,241,0.18); }
+
+/* reveal state */
+.da-service-card { opacity:0; transform: translateY(28px); }
+.da-service-card.is-revealed { opacity:1; transform: translateY(0); transition: all .6s cubic-bezier(.2,.9,.2,1); }
+
+/* image */
+.da-service-figure { position:relative; overflow:hidden; height:190px; }
+.da-service-figure img { width:100%; height:100%; object-fit:cover; display:block; transition: transform .65s cubic-bezier(.2,.9,.2,1); }
+.da-card-overlay {
+  position:absolute; inset:0;
+  background: linear-gradient(180deg, rgba(12,12,18,0) 20%, rgba(10,10,16,0.36) 100%);
+  pointer-events:none;
+  transition: opacity .28s;
+}
+
+/* body */
+.da-service-body { padding:18px; display:flex; flex-direction:column; gap:10px; }
+.da-service-kicker { display:inline-block; padding:4px 12px; border-radius:999px; background:#6366f1; color:#fff; font-size:13px; font-weight:600; width:fit-content; }
+.da-service-name { color:#fff; font-size:20px; margin:0; }
+.da-service-desc { color:#c7cbe7; font-size:14px; margin:0; flex:1; }
+
+/* actions */
+.da-service-actions { display:flex; gap:10px; align-items:center; margin-top:8px; }
+.da-service-link { color:#9ea6ff; text-decoration:none; font-weight:600; }
+.da-service-btn {
+  background:transparent;
+  color:#fff;
+  border:1px solid rgba(255,255,255,0.06);
+  padding:8px 14px;
+  border-radius:10px;
+  transition: all .25s ease;
+  font-weight:700;
+}
+.da-service-btn:hover {
+  background:linear-gradient(90deg,#6366f1,#4f46e5);
+  box-shadow: 0 14px 40px rgba(79,70,229,0.18);
+  transform: translateY(-4px);
+}
+
+/* hover effects (image zoom + glow border) */
+.da-service-card:hover .da-service-figure img { transform: scale(1.08) translateZ(0); }
+.da-service-card:hover { box-shadow: 0 30px 60px rgba(2,6,23,0.55), 0 6px 18px rgba(79,70,229,0.08); border-color: rgba(99,102,241,0.32); transform: translateY(-8px) scale(1.01); }
+
+/* magnetic focus shadow */
+.da-service-card[tabindex] { cursor:pointer; }
+
+/* sticky header styles */
+.js-sticky-header {
+  position:relative;
+  transition: all .25s ease;
+  z-index: 999;
+}
+.js-sticky-header.is-scrolled {
+  position: fixed;
+  top: 8px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: calc(100% - 40px);
+  max-width: 1300px;
+  border-radius: 12px;
+  background: rgba(6,6,10,0.62);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 30px rgba(2,6,23,0.45);
+}
+
+/* CTA cinematic */
+.da-cta-cinematic { padding: 60px 0; background: linear-gradient(180deg,#0e0f13,#07070a); text-align:center; }
+.cta-inner { max-width:900px; margin:0 auto; padding:28px; border-radius:14px; background:linear-gradient(180deg, rgba(99,102,241,0.04), rgba(255,255,255,0.01)); box-shadow: 0 12px 50px rgba(2,6,23,0.6); }
+.cta-title { color:#fff; font-size:30px; margin-bottom:8px; }
+.cta-sub { color:#bfc6ff; margin-bottom:14px; }
+.da-cta-primary { background:linear-gradient(90deg,#7c86ff,#5b4bf6); color:#fff; padding:12px 24px; border-radius:12px; display:inline-block; font-weight:700; box-shadow: 0 18px 48px rgba(79,70,229,0.18); text-decoration:none; transition: transform .18s; }
+.da-cta-primary:hover{ transform:translateY(-6px); }
+
+/* footer */
+.site-footer { padding:28px 0; background:#08080a; color:#94a0d8; }
+.footer-logo { height:34px; margin-right:12px; }
+.footer-copy { margin:6px 0 0; font-size:13px; color:#8e97c1; }
+
+/* responsive */
+@media (max-width: 992px) {
+  .da-service-grid { grid-template-columns: repeat(2, 1fr); }
+  .da-hero-title { font-size:32px; }
+}
+@media (max-width: 600px) {
+  .da-service-grid { grid-template-columns: 1fr; }
+  .js-sticky-header.is-scrolled { width: calc(100% - 18px); left: 9px; right: 9px; }
+}
+.da-service-card {
+    border: 1px solid rgba(255,255,255,0.1) !important;
+    background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01)) !important;
+    border-radius: 22px !important;
+    padding: 30px !important;
+    transition: all .3s ease !important;
+}
+
+.da-service-card:hover {
+    transform: translateY(-12px) !important;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.45) !important;
+    border-color: rgba(139,92,246,0.6) !important;
+}
+/* =====================================================================
+   PREMIUM SERVICE CARD – Full Animation Upgrade
+   ===================================================================== */
+
+/* Base card */
+.da-service-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 22px;
+    padding: 26px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: all .45s cubic-bezier(.2, .75, .25, 1);
+}
+
+/* Card hover 3D tilt */
+.da-service-card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 
+        0 25px 50px rgba(0,0,0,0.5),
+        0 0 30px rgba(139,92,246,0.28);
+}
+
+/* Animated gradient background */
+.da-service-card::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(
+        120deg,
+        rgba(99,102,241,0.5),
+        rgba(168,85,247,0.5),
+        rgba(79,70,229,0.5)
+    );
+    background-size: 300% 300%;
+    animation: gradientMove 5s ease infinite;
+    z-index: -1;
+    border-radius: inherit;
+    opacity: .0;
+    transition: opacity .4s ease;
+}
+
+.da-service-card:hover::before {
+    opacity: .35;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Neon border animated */
+.da-service-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: conic-gradient(
+        rgba(139,92,246,0.6),
+        rgba(79,70,229,0.6),
+        rgba(139,92,246,0.6),
+        rgba(79,70,229,0.6)
+    );
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+    mask: 
+        linear-gradient(#000 0 0) content-box, 
+        linear-gradient(#000 0 0);
+    opacity: 0;
+    animation: rotateBorder 4s linear infinite;
+    transition: opacity .4s ease;
+}
+
+.da-service-card:hover::after {
+    opacity: 1;
+}
+
+@keyframes rotateBorder {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+/* Image hover zoom */
+.da-service-card .da-service-figure img {
+    border-radius: 14px;
+    transition: transform .6s ease;
+}
+.da-service-card:hover .da-service-figure img {
+    transform: scale(1.07);
+}
+
+/* Badge premium */
+.da-badge {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    background: linear-gradient(90deg, #f59e0b, #d97706);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(245,158,11,0.4);
+}
+
+/* Text improvements */
+.da-service-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+.da-service-desc {
+    color: #d0d4ff;
+    line-height: 1.55;
+}
+
+/* Button premium */
+.da-service-btn {
+    padding: 10px 18px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.04);
+    color: #fff;
+    transition: all .3s ease;
+    font-weight: 600;
+    margin-top: 14px;
+}
+.da-service-btn:hover {
+    background: linear-gradient(90deg,#6366f1,#4f46e5);
+    transform: translateY(-4px);
+    box-shadow: 0 15px 40px rgba(79,70,229,0.3);
+}
+
+/* Stagger reveal */
+.da-service-card {
+    opacity: 0;
+    transform: translateY(30px);
+}
+.da-service-card.revealed {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all .8s cubic-bezier(.2,.8,.2,1);
+}
+/* =========================================================
+   GLOBAL THEME MATCHING INDEX PAGE
+   ========================================================= */
+
+/* Warna dasar background */
+body.body-bg-color {
+    background: #0b0c10 !important;
+    color: #ffffff;
+}
+
+/* Section gelap seperti index */
+.section-dark,
+.da-services,
+.da-hero-crumb,
+.da-cta-cinematic {
+    background: radial-gradient(
+        circle at top,
+        rgba(80, 70, 229, 0.12) 0%,
+        rgba(0, 0, 0, 1) 70%
+    ) !important;
+    position: relative;
+    z-index: 1;
+}
+
+/* Gradient soft seperti pricing section */
+.section-dark::before,
+.da-services::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(255,255,255,0.02) 0%,
+        rgba(255,255,255,0) 80%
+    );
+    z-index: -1;
+}
+
+/* Heading color match */
+.section-title,
+.da-hero-title,
+.da-service-name {
+    color: #ffffff !important;
+}
+
+/* Text halus sekunder */
+.section-lead,
+.da-hero-sub,
+.da-service-desc {
+    color: #bfc6ff !important;
+}
+
+/* Card background seperti pricing */
+.da-service-card {
+    background: linear-gradient(
+        180deg,
+        rgba(255,255,255,0.04),
+        rgba(255,255,255,0.02)
+    ) !important;
+    border: 1px solid rgba(255,255,255,0.07) !important;
+    border-radius: 24px !important;
+}
+
+/* Tombol sama seperti index */
+.da-service-btn,
+.da-cta-btn {
+    background: linear-gradient(90deg, #6366f1, #4f46e5) !important;
+    color: #ffffff !important;
+    border: none !important;
+    box-shadow: 0 8px 25px rgba(79,70,229,0.25);
+}
+
+.da-service-btn:hover,
+.da-cta-btn:hover {
+    box-shadow: 0 12px 35px rgba(79,70,229,0.35);
+    transform: translateY(-4px);
+}
+
+/* Container spacing sama seperti index */
+.da-services {
+    padding: 100px 0 !important;
+}
+
+.da-hero-crumb {
+    padding: 120px 0 90px !important;
+}
+/* =======================================================
+   ASTRONAUT ORBIT ANIMATION (PREMIUM)
+   ======================================================= */
+
+.orbit-astronaut {
+    position: absolute;
+    top: -200px;              /* mulai sedikit di luar layar */
+    left: 50%;
+    width: 240px;
+    transform-origin: center;
+    pointer-events: none;
+    z-index: 0;               /* di belakang teks hero */
+    animation: orbitPath 18s linear infinite; 
+}
+
+.orbit-astronaut img {
+    width: 100%;
+    animation: orbitRotate 10s linear infinite;
+    filter: drop-shadow(0 10px 25px rgba(79,70,229,0.4));
+}
+
+/* Gerakan orbit melengkung */
+@keyframes orbitPath {
+    0% {
+        transform: translate(-400px, -200px) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    35% {
+        transform: translate(-150px, 80px) rotate(15deg);
+    }
+    55% {
+        transform: translate(150px, 120px) rotate(5deg);
+    }
+    80% {
+        transform: translate(420px, -40px) rotate(-10deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(600px, -200px) rotate(-25deg);
+        opacity: 0;
+    }
+}
+
+/* Putar badan astronot sedikit */
+@keyframes orbitRotate {
+    0% { transform: rotate(-8deg); }
+    50% { transform: rotate(8deg); }
+    100% { transform: rotate(-8deg); }
+}
+#galaxy-canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}	
+.jetpack-astronaut {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+    width: 200px;
+    animation: jetFloat 6s ease-in-out infinite;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.jetpack-astronaut img {
+    width: 100%;
+}
+
+@keyframes jetFloat {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-18px); }
+    100% { transform: translateY(0); }
+}
+/* no CSS needed — handled in JS */
+
+/* ======================================================
+   TWO FLOATING ASTRONAUTS — FACING EACH OTHER (RIGHT SIDE)
+   ====================================================== */
+
+.astro-pair {
+    position: absolute;
+    right: 50px;         /* posisi kanan */
+    top: 50%;            /* posisikan di tengah tinggi hero */
+    transform: translateY(-50%);
+    width: 360px;        /* area space astronot */
+    height: 260px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.astro {
+    position: absolute;
+    width: 160px;
+    animation: astroFloat 5s ease-in-out infinite,
+               astroTilt 6s ease-in-out infinite;
+}
+
+.astro img {
+    width: 100%;
+    filter: drop-shadow(0 12px 28px rgba(99,102,241,0.45));
+}
+
+/* Astronot kiri */
+.astro-left {
+    left: 0;
+    top: 20px;
+    transform: scaleX(-1);  /* membalikkan arah agar saling menghadap */
+}
+
+/* Astronot kanan */
+.astro-right {
+    right: 0;
+    top: -20px;
+}
+
+/* Animasi melayang */
+@keyframes astroFloat {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-25px); }
+    100% { transform: translateY(0); }
+}
+
+/* Animasi sedikit memiringkan badan */
+@keyframes astroTilt {
+    0% { transform: rotate(-4deg); }
+    50% { transform: rotate(6deg); }
+    100% { transform: rotate(-4deg); }
+}
+/* =========================================
+   PREMIUM MOUSE CURSOR FOLLOWER
+   ========================================= */
+
+.cursor {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  background: #ffffff;
+  border-radius: 50%;
+  z-index: 10000;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-follower {
+  position: fixed;
+  width: 26px;
+  height: 26px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  z-index: 9999;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.08s ease-out;
+}
+/* Fade Gradasi di akhir Solutions One */
+.solutions-one {
+    position: relative;
+}
+
+.solutions-one__fade-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    background: linear-gradient(180deg, rgba(9, 0, 27, 0) 0%, rgba(9, 0, 27, 0.85) 80%, rgba(9, 0, 27, 1) 100%);
+    pointer-events: none;
+    z-index: 5;
+}
+.solutions-one__showmore-box {
+    margin-top: 40px;
+}
+
+.solutions-one__showmore-btn {
+    padding: 12px 32px;
+    border-radius: 50px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: transparent;
+    color: #fff;
+    font-weight: 500;
+    transition: all .3s ease;
+    backdrop-filter: blur(6px);
+}
+
+.solutions-one__showmore-btn:hover {
+    background: #ffffff;
+    color: #000b25;
+}
+
